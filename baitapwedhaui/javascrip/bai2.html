@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Giải phương trình bậc 2</title>
+    <script type="text/javascript">
+        function solveQuadraticEquation() {
+            // Lấy giá trị hệ số từ người dùng
+            var a = parseFloat(document.getElementById("a").value);
+            var b = parseFloat(document.getElementById("b").value);
+            var c = parseFloat(document.getElementById("c").value);
+
+            // Tính delta
+            var delta = b * b - 4 * a * c;
+
+            // Tính nghiệm
+            if (delta > 0) {
+                var x1 = (-b + Math.sqrt(delta)) / (2 * a);
+                var x2 = (-b - Math.sqrt(delta)) / (2 * a);
+                document.getElementById("result").innerHTML = "Nghiệm của phương trình là: x1 = " + x1 + ", x2 = " + x2;
+            } else if (delta == 0) {
+                var x = -b / (2 * a);
+                document.getElementById("result").innerHTML = "Nghiệm của phương trình là: x = " + x;
+            } else {
+                document.getElementById("result").innerHTML = "Phương trình không có nghiệm thực.";
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="a" placeholder="Nhập hệ số a">
+    <input type="text" id="b" placeholder="Nhập hệ số b">
+    <input type="text" id="c" placeholder="Nhập hệ số c">
+    <button onclick="solveQuadraticEquation()">Giải phương trình</button>
+    <p id="result"></p>
+</body>
+</html>

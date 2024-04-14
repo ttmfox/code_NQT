@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Trang web của bạn</title>
+ 
+    <style>
+        
+        /* Định dạng cho phần tử có lớp heart */
+        .heart {
+            background-color: pink; /* Màu nền hồng */
+            width: 100px; /* Chiều rộng 100px */
+            height: 100px; /* Chiều cao 100px */
+            position: relative; /* Vị trí tương đối */
+            transform: rotate(-45deg); /* Xoay 45 độ ngược chiều kim đồng hồ */
+            margin: 50px auto; /* Căn giữa phần tử */
+        }
+
+        /* Định dạng cho phần tử giả ::before và ::after */
+        .heart::before, .heart::after {
+            content: ""; /* Không có nội dung */
+            background-color: pink; /* Màu nền hồng */
+            width: 100px; /* Chiều rộng 100px */
+            height: 100px; /* Chiều cao 100px */
+            position: absolute; /* Vị trí tuyệt đối */
+            border-radius: 50%; /* Làm tròn các góc */
+        }
+
+        /* Định dạng cho phần tử giả ::before */
+        .heart::before {
+            top: -50px; /* Đặt ở phía trên */
+            left: 0; /* Đặt ở bên trái */
+        }
+
+        /* Định dạng cho phần tử giả ::after */
+        .heart::after {
+            left: 50px; /* Đặt ở bên phải */
+            top: 0; /* Đặt ở phía dưới */
+        }
+
+        /* Đặt hình nền cho phần tử heart */
+        .heart {
+            background-image: url(https://stackoverflow.com/questions/17386168/how-to-create-a-heart-shape-using-css); /* Sử dụng hình ảnh từ công cụ của tôi */
+            background-size: cover; /* Điều chỉnh kích thước hình ảnh cho vừa với phần tử */
+            background-repeat: no-repeat; /* Không lặp lại hình ảnh */
+        }
+
+        /* Định dạng cho phần tử có lớp center */
+        .center {
+            text-align: center; /* Căn giữa nội dung */
+        }
+
+        /* Định dạng cho phần tử img */
+        img {
+            margin: 10px; /* Đặt khoảng cách trên dưới là 10px */
+        }
+
+        /* Định dạng cho phần tử p */
+        h1 {
+            font-size: 20px; /* Đặt kích thước chữ là 20px */
+            color: pink; /* Đặt màu chữ là đỏ */
+        }
+        
+    </style>
+</head>
+<body>
+ 
+    <div class="heart"></div>
+
+    <div class="center">
+        <h1>  ck yêu bé Cáo nhiều</h1>
+ 
+        <img src="https://th.bing.com/th/id/OIG.pixjvrX2rWiKlA0dSq49?w=1024&h=1024&rs=1&pid=ImgDetMain" alt="Ảnh đẹp">
+       
+      
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,168 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+li{
+    list-style-type: none;
+}
+.header{
+height: 100px;
+display: flex;
+justify-content: space-between;
+background-color: red;
+align-items: center;
+}
+.header_logo img{
+height: 90px;
+}
+.header_search{
+display: flex;
+position: relative;
+}
+.header_lable{
+margin-left: -200px;
+}
+.header_lable input{
+    padding: 12px 200px 12px 8px;
+    margin-left: 200px;
+}
+.search_icon{
+position: absolute;
+background-color: black;
+color: aliceblue;
+right: -40px;
+display: flex;
+justify-content: center;
+ align-items: center;
+ aspect-ratio: 1/1;
+ height: 100%;
+}
+.header_icons{
+display: flex;
+color: aliceblue;
+gap: 20px;
+}
+.header_icon{
+ display: flex;
+ flex-direction: column;
+align-items: center; 
+
+}
+
+.nav ul{
+    height: 80px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    background-color: black;
+    justify-content: space-around;
+}
+.nav ul li a {
+    color: aliceblue;
+    text-decoration: none;
+    line-height: 50px;
+    display: inline-block;
+    width: 120px;
+    text-align: center; 
+    padding: 10px;
+}
+.nav li:hover{
+    background-color: gray;
+}
+
+.drop_down{
+position: relative;
+}
+.nav .menulv2{
+position: absolute;
+display: grid;
+grid-template-columns: auto;
+
+margin-top: 10px;
+display: none;
+
+}
+.nav .menulv2 a{
+    color: black;
+    background-color: red;
+    width: 150px;
+    padding-left: 10px;
+}
+.drop_down:hover .menulv2 {
+    display: grid;
+}
+
+.container{
+
+}
+.container_nav .firts{
+margin-top: 20px;
+margin: 12px;
+
+}
+
+.container_nav .nav  {
+    padding: 12px;
+    display: flex;
+    justify-content: space-around;
+}.container_nav .nav .firts{
+    background-color: yellow;
+    height: 50px;
+    width: 150px;
+    padding: 10px;
+}
+
+
+.container_sidebar{
+margin-left: 40px;
+width: 300px;
+float: left;
+display: flex;
+flex-wrap:wrap ;
+gap: 20px;
+
+}
+.container_sidebar img {
+    height: 200px;
+}
+.container_content{
+    display: flex;
+    margin-bottom: 100px;
+}
+.container_content img {
+    height: 590px;
+}
+
+.container_name{
+    font-size: 24px;
+}
+.content_price{
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    align-items: center;
+}
+.price_sale{
+    color: red;
+}
+.price_origin{
+    color: gray;
+    text-decoration: line-through;
+}
+
+.price_sale-percent{
+    display: flex;
+    height: 30px;
+    align-items: center;
+    color: aliceblue;
+    background-color: red;    
+}
+
+.footer{
+    height: 200px;
+    background-color: black;
+    display: flex;
+    color: aliceblue;
+    align-items: center;
+    justify-content: center;
+}

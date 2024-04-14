@@ -1,0 +1,52 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+}
+nav{
+    width:100%;
+    background-color:blue;
+    height:50px;
+    
+}
+nav ul{
+    display:grid;
+    grid-template-columns:auto auto auto auto auto;
+    list-style-type:none;
+    justify-content:space-around;
+}
+nav a{
+    color:white;
+    text-decoration:none;
+    line-height:50px;
+    display:inline-block;
+    width:120px;
+    text-align:center;
+    
+}
+nav a:hover{
+    background-color:red;
+}
+.cha{
+    position:relative;
+}
+.con{
+    position:absolute;
+    display:grid;
+    grid-template-columns:auto;
+    width:200px;
+    background-color:red;
+    display:none;
+}
+.con a{
+    text-align:left;
+    width:200px;
+    padding-left:5px;
+}
+.cha:hover .con{
+    display:grid;
+}
+.con a:hover{
+    background-color:yellow;
+    color:red;
+}

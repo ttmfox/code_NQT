@@ -1,0 +1,109 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header{
+    height: 100px;
+}
+/* ctrl shift L > ctrC ctrV  trỏ vào đầu ấn alt + ctrl */
+body{
+    background-color: aquamarine;
+}
+.header img{
+ float: left; 
+height: 100%;
+height: 100px;
+border: 1px solid black;
+margin: 20px;
+}
+.header h1{
+    text-align: center;
+}
+nav{
+    background-color:aqua ;
+    height: 50px ;
+    width: 100%;
+}
+nav .menulv1 {
+   
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto;
+    list-style-type: none;
+    justify-content: space-around;
+
+}
+nav .menulv1 a{
+    color: blue;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    width: 120px;
+   
+}
+nav .menulv1{
+    
+    margin: 20px;
+    
+}
+.drop-down{
+    position: relative;
+}
+.menulv1 li:hover {
+background-color:bisque ;
+}
+.drop-down{
+
+}
+.menulv2{
+position: absolute;
+display: grid;
+grid-template-columns: auto;
+background-color:aqua ;
+list-style-type: none;
+width: 200px;
+margin: 10px;
+display: none; 
+}
+.menulv2 li a {
+    
+    color: blue;
+    text-align: left;
+    padding-left: 10px;
+    width: 200px;
+  
+}
+.drop-down:hover .menulv2{
+display: grid;
+}
+.menulv2 li:hover{
+    background-color: blue;
+}
+aside{
+    float: left; 
+    margin-top: 80px;
+    margin-left: 40px;
+}
+aside a {
+    color: blue;
+    text-decoration: none;
+}
+.content{
+margin-top: 20px ;
+}
+.imgmain{
+ float:left; 
+width: 400px;
+height:400px;
+border:1px solid black ;
+margin-left: 70px;
+}
+.imgmain img{
+    width: 400px;
+    height: 400px;
+}
+.write{
+
+}

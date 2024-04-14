@@ -1,0 +1,85 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container_firts{
+margin-left: 40px;
+width: 300px;
+
+float: left;
+display: grid;
+grid-template-columns: 50% 50%;
+gap: 50px;
+
+}
+.container_firts img{
+    height: 100px;
+
+}
+.firts_item{
+
+}
+.container_content{
+display: flex;
+margin-bottom: 20px;
+}
+.container_content img{
+height: 600px;
+
+}
+.container_wrapper{
+
+}
+.content_img{
+
+}
+.content_name{
+
+}
+.content_price{
+
+}
+.price{
+
+}
+.price_sale{
+
+}
+.price_origin{
+
+}
+.price_sale_percent{
+
+}
+.price_icon{
+
+}
+/* container_wrapper
+content_img
+content_name
+content_price
+price
+price_sale
+price_origin
+price_sale_percent
+price_icon
+container_wrapper
+content_img
+content_name
+content_price
+price
+price_sale
+price_origin
+price_sale_percent
+price_icon
+container_wrapper
+content_img
+content_name
+content_price
+price
+price_sale
+price_origin
+price_sale_percent
+price_icon */

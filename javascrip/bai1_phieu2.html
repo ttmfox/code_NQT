@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+  function giaiPhuongTrinh() {
+  const a = document.getElementById("a").value;
+  const b = document.getElementById("b").value;
+  const c = document.getElementById("c").value;
+
+  // Tính delta
+  const delta = b * b - 4 * a * c;
+
+  // Xử lý các trường hợp
+  if (delta < 0) {
+    document.getElementById("ketQua").innerHTML = "Phương trình vô nghiệm";
+  } else if (delta === 0) {
+    const x = -b / (2 * a);
+    document.getElementById("ketQua").innerHTML = `Phương trình có nghiệm kép x = ${x}`;
+  } else {
+    const x1 = (-b + Math.sqrt(delta)) / (2 * a);
+    const x2 = (-b - Math.sqrt(delta)) / (2 * a);
+    document.getElementById("ketQua").innerHTML = `Phương trình có hai nghiệm x1 = ${x1} và x2 = ${x2}`;
+  }
+}
+</script>
+</head>
+<body>
+  <h1>Giải phương trình bậc 2</h1>
+  <p>Nhập hệ số a, b, c:</p>
+  <input type="number" id="a" value="4">
+  <input type="number" id="b" value="6">
+  <input type="number" id="c" value="2">
+  <button onclick="giaiPhuongTrinh()">Giải</button>
+  <p id="ketQua"></p>
+</body>
+</html>

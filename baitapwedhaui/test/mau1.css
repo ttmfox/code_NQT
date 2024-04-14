@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #CCFF33;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+.header {
+    height: 100px;
+}
+
+.header img {
+    float: left;
+    height: 100%;
+    border: 1px solid black;
+}
+
+.header h1 {
+ 
+    
+}
+
+.header h1:first-child {
+    text-align: left;
+}
+
+.header h1:last-child {
+    text-align: right;
+}
+
+.nav-lv1 {
+    background-color: #00FF00;
+    padding: 20px 0;
+}
+
+nav li {
+    display: inline-block;
+    position: relative; /* Add this to make child absolute positioning work */
+}
+
+li a {
+    background-color: #00FF00;
+    display: inline-block; /* Change from "inline" to "inline-block" */
+    padding: 20px 24px;
+    margin: -20px 0;
+}
+
+li a:hover {
+    background-color: #999999;
+}
+
+.nav-lv2 {
+    margin: 20px 0;
+    display: none;
+    position: absolute;
+    top: 100%; /* Adjust the positioning to align with the parent li */
+    left: 0;
+    background-color: #00FF00;
+}
+
+.nav-lv2 a {
+    top: 0;
+    left: 0;
+    display: block;
+}
+
+.nav-lv2 li {
+    min-width: 240px;
+    padding: 20px 0;
+}
+
+.drop-down:hover .nav-lv2 {
+    display: block; /* Show the submenu on hover of the parent li */
+}
+
+aside {
+    float: left;
+    margin-top: 80px;
+    margin-left: 40px;
+}
+
+.content__wrapper {
+    margin-top: 20px;
+}
+
+.content__img img {
+    float: left;
+    width: 400px;
+    border: 1px solid black;
+}

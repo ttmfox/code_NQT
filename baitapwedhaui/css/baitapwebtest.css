@@ -1,0 +1,72 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box
+}
+
+html{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.contanter{
+    width: 1366px;
+    background-color: aqua;
+    margin: auto;
+    height: 800px;
+}
+.header{
+
+}
+.banner{
+
+
+
+    height: 100px;
+    display: flex;
+
+}
+.banner h1 {
+    padding-top: 30px ;
+    margin: 0px 400px;
+}
+.menu{
+height: 40px;
+background-color: blue;
+display: flex;
+padding-left: 50px;
+
+}
+.menu li {
+    position: relative;
+    display: inline-block;
+    line-height: 40px;
+    padding:  0px 20px;
+}
+.menu li a {
+    text-decoration: none;
+
+}
+.menu li:hover{
+    background-color: brown;
+}
+.menu input{
+    padding-left:10px ;
+    height: 40px;
+    border-radius: 5px;
+    margin-left: 30px;
+   
+}
+.menucon{
+position: absolute;
+ display: none;
+ background-color: blueviolet;
+ margin-left: -15px;
+ box-shadow: 5px 5px 10px white;
+
+}
+.menucon li {
+    width: 200px;
+}
+.menu li:hover .menucon{
+display: block;
+}

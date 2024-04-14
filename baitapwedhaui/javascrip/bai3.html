@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Giải hệ phương trình bậc nhất 2 ẩn</title>
+</head>
+<body>
+  <h1>Giải hệ phương trình bậc nhất 2 ẩn</h1>
+  <form onsubmit="giaiHePhuongTrinh()">
+    <label for="a1">Hệ số a1:</label>
+    <input type="number" id="a1" name="a1" required>
+    <br>
+    <label for="b1">Hệ số b1:</label>
+    <input type="number" id="b1" name="b1" required>
+    <br>
+    <label for="c1">Hệ số c1:</label>
+    <input type="number" id="c1" name="c1" required>
+    <br>
+    <label for="a2">Hệ số a2:</label>
+    <input type="number" id="a2" name="a2" required>
+    <br>
+    <label for="b2">Hệ số b2:</label>
+    <input type="number" id="b2" name="b2" required>
+    <br>
+    <label for="c2">Hệ số c2:</label>
+    <input type="number" id="c2" name="c2" required>
+    <br>
+    <button type="submit">Giải</button>
+  </form>
+  <p id="ketQua"></p>
+ <script>function giaiHePhuongTrinh() {
+    const a1 = Number(document.getElementById("a1").value);
+    const b1 = Number(document.getElementById("b1").value);
+    const c1 = Number(document.getElementById("c1").value);
+    const a2 = Number(document.getElementById("a2").value);
+    const b2 = Number(document.getElementById("b2").value);
+    const c2 = Number(document.getElementById("c2").value);
+    const delta = a1 * b2 - a2 * b1;
+    const ketQua = document.getElementById("ketQua");
+  
+    if (delta === 0) {
+      if (a1 / a2 === b1 / b2 && a1 / a2 === c1 / c2) {
+        ketQua.innerHTML = "Hệ phương trình có vô số nghiệm";
+      } else {
+        ketQua.innerHTML = "Hệ phương trình vô nghiệm";
+      }
+    } else {
+      const x = (b2 * c1 - b1 * c2) / delta;
+      const y = (a1 * c2 - a2 * c1) / delta;
+      ketQua.innerHTML = `Hệ phương trình có nghiệm duy nhất: x = ${x}, y = ${y}`;
+    }
+  }
+  </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+body {
+    background-image: url("images/hearts.png");
+    background-repeat: repeat;
+  }
+  
+  
+  .container {
+    width: 500px;
+    margin: 0 auto;
+  }
+  
+  .header {
+    text-align: center;
+  }
+  
+  .content {
+    padding: 20px;
+    border: 2px solid #000000;
+    background-color: #f0f0f0;
+  }
+  
+  .heart {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    background-color: #ff00ff;
+    border: 2px solid #000000;
+  }

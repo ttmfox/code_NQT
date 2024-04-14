@@ -1,0 +1,30 @@
+ <!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cộng hai số có một chữ số</title>
+  <script>
+    function congHaiSo() {
+  const so1 = document.getElementById("so1").value;
+  const so2 = document.getElementById("so2").value;
+
+  const tong = parseInt(so1) + parseInt(so2);
+
+  document.getElementById("ketQua").innerHTML = tong;
+  
+}
+
+  </script>
+</head>
+<body>
+  <h1>Cộng hai số có một chữ số</h1>
+  <form onsubmit="return false;">
+    <input type="number" id="so1" min="0" max="9" value="0">
+    <span>+</span>
+    <input type="number" id="so2" min="0" max="9" value="0">
+    <button onclick="congHaiSo()">=</button>
+    <span id="ketQua"></span>
+  </form>
+</body>
+</html>

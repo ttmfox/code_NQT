@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chương trình tra tuổi dương lịch</title>
+    <script type="text/javascript">
+        function convertLunarToSolar() {
+            // Lấy giá trị tuổi âm lịch từ người dùng
+            var lunarAge = parseInt(prompt("Nhập tuổi âm lịch:"));
+
+            // Tính tuổi dương lịch
+            var solarAge = lunarAge + 1;
+
+            // Hiển thị kết quả
+            alert("Tuổi dương lịch của bạn là: " + solarAge);
+        }
+    </script>
+</head>
+<body>
+    <button onclick="convertLunarToSolar()">Chuyển đổi</button>
+</body>
+</html>

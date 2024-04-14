@@ -1,0 +1,38 @@
+.box {
+    height: 100px;
+    width: 100px;
+    background-color: purple;
+    padding: 16px;
+    box-sizing: border-box;
+}
+.box1{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    padding: 16px;
+   
+}
+.box2{
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    padding: 16px;
+    box-sizing: border-box;
+}
+.box3{
+    height: 100px;
+    width: 100px;
+    background-color: brown;
+    padding: 16px;
+    box-sizing: border-box;
+}
+.box4{
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    padding: 16px;
+    box-sizing: border-box;
+}
+.box4{
+    box-sizing: unset;
+}
